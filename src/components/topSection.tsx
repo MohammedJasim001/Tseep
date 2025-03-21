@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Logo from "./logo";
-import profile from "../assets/profile.png";
 import { LogOut } from "lucide-react";
 
 const TopSection = () => {
@@ -19,7 +18,7 @@ const TopSection = () => {
 
       <div className="relative">
         <img
-          src={profile}
+          src='profile.png'
           alt="profile"
           className="w-8 h-8 md:w-14 md:h-14 rounded-full cursor-pointer mr-5 md:mr-10 md:mb-10"
           onClick={() => setIsOpen(!isOpen)}

@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import err from "../assets/error.jpeg";
 import Logo from "../components/logo";
 import Button from "../components/ui/button";
 
@@ -17,7 +16,7 @@ const ErrorPage: React.FC<ErrorPageProps> = () => {
     <div className="flex flex-col items-center justify-center w-full ">
       <Logo />
 
-      <img src={err} alt="error" className="md:w-[40%] w-full mb-10 md:mt-0 mt-20" />
+      <img src='/error.jpeg' alt="error" className="md:w-[40%] w-full mb-10 md:mt-0 mt-20" />
 
       <p className="text-[#313131] mt-7 text-xl md:text-4xl tracking-wider">
         Sorry,it looks like the page get
