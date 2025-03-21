@@ -24,15 +24,18 @@ export default function Feedback() {
     setSelectedRating(rating);
   };
 
-  const { mutate } = useFeedback();
+  const { mutate, isSuccess } = useFeedback();
 
   const handleSubmit = () => {
     if (!selectedRating || !feedback) return;
     mutate([{ comment: feedback, rating: selectedRating }]);
     setFeedback("");
     setSelectedRating(null);
-    navigate('/')  
   };
+
+  if(isSuccess){
+    navigate('/')
+  }
 
   const handleHome = () => {
     navigate("/");
