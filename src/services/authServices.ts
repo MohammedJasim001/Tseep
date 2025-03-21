@@ -7,7 +7,6 @@ export const registerApi = async(data:{ userName: string;
     status: string;
     password: string;})=> {
     const response = await apiClient.post(API_ROUTES.AUTH.REGISTER,data)
-    console.log(response,'response');
     return response.data
 }
 

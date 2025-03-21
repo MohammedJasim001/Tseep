@@ -23,7 +23,7 @@ const QuizUI = () => {
 
   const handleNext = () => {
     if (currentQuestionIndex == 9) {
-      localStorage.setItem('mark',mark.toString())
+      localStorage.setItem("mark", mark.toString());
       navigate("/complete");
     }
     if (currentQuestionIndex < data.questions.length - 1) {
@@ -42,7 +42,6 @@ const QuizUI = () => {
 
   const handleSidebar = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen, "isOpen");
   };
 
   return (
@@ -57,8 +56,8 @@ const QuizUI = () => {
       />
       {isOpen && (
         <SideBar
-        setIsOpen = {setIsOpen}
-          isOpen = {isOpen}
+          setIsOpen={setIsOpen}
+          isOpen={isOpen}
           totalQuestions={data.questions.length}
           currentQuestion={currentQuestionIndex + 1}
           setCurrentQuestionIndex={setCurrentQuestionIndex}

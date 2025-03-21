@@ -10,8 +10,8 @@ import { useNavigate } from "react-router-dom";
 import { useRegister } from "../../hooks/useAuth.ts";
 
 const Register = () => {
-  const {mutate,isSuccess} = useRegister()
-  const navigate = useNavigate()
+  const { mutate, isSuccess } = useRegister();
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       userName: "",
@@ -22,16 +22,13 @@ const Register = () => {
     },
     validationSchema: signupSchema,
     onSubmit: (values) => {
-      mutate(values)
+      mutate(values);
     },
   });
 
-
-  if(isSuccess){
-    navigate('/login')
+  if (isSuccess) {
+    navigate("/login");
   }
-
-
 
   return (
     <div className="flex h-screen items-center justify-center px-4">
