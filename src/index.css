@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+
+
+:root {
+  --color-primary: #000;
+  --color-text:#313131;
+  --color-background: #ffffff;
+  --color-text: theme(colors.gray.900);
+  --button-background: #2A586F;
+  --button-hover:#163d49;
+  --button-text: #ffffff;
+  --auth-backgroud:#C4C4C4;
+}
+
+.dark {
+  --color-primary: theme(colors.blue.300);
+  --color-background: theme(colors.gray.900);
+  --color-text: theme(colors.white);
+}
