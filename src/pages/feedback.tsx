@@ -31,6 +31,7 @@ export default function Feedback() {
     mutate([{ comment: feedback, rating: selectedRating }]);
     setFeedback("");
     setSelectedRating(null);
+    navigate('/')  
   };
 
   const handleHome = () => {
